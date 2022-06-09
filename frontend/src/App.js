@@ -7,7 +7,7 @@ function App() {
   const [msg, setMsg]= useState([]);
 
 useEffect(()=>{
-  axios.get(`https://8080-albimema-bootcampprojec-0cc5dyxmrak.ws-eu47.gitpod.io/api/rest/public/table/messages`)
+  axios.get(`https://8080-albimema-bootcampprojec-0cc5dyxmrak.ws-eu47.gitpod.io/api/rest/public/table/message`)
     .then((response)=>{
       console.log(response);
       setMsg(response.data.chatroom_display_cache);
@@ -22,14 +22,14 @@ useEffect(()=>{
 
       
 
-<table class="styled-table">
+<table className="styled-table">
         <thead>
           <tr>
-            <th class="header">User</th>
-            <th class="header">ChatName</th>
-            <th class="header">Messages count</th>
-            <th class="header">Last Message</th>
-            <th class="header">Created at</th>
+            <th className="header">User</th>
+            <th className="header">ChatName</th>
+            <th className="header">Messages count</th>
+            <th className="header">Last Message</th>
+            <th className="header">Created at</th>
           </tr>
         </thead>
         <tbody>
