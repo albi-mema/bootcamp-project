@@ -1,4 +1,4 @@
-# HASURA SEED SOURCE
+
 # it is used in the
 seed?=seed
 
