@@ -9,14 +9,3 @@ CREATE TABLE "public"."message" (
 
 ALTER TABLE ONLY "public"."message" ADD CONSTRAINT "message_chatroom_id_fkey" FOREIGN KEY (chatroom_id) REFERENCES chatroom(id_chatroom) ON UPDATE CASCADE ON DELETE CASCADE NOT DEFERRABLE;
 ALTER TABLE ONLY "public"."message" ADD CONSTRAINT "message_user_id_fkey" FOREIGN KEY (user_id) REFERENCES users(id) ON UPDATE CASCADE ON DELETE CASCADE NOT DEFERRABLE;
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
