@@ -80,4 +80,5 @@ migrate-create:
 		--down-sql "SELECT NOW();" \
 		--database-name default \
 		--project hasura-ecomm
+		
 	#@hasura migrate apply --project hasura-ecomm --database-name default
