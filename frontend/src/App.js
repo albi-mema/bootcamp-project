@@ -40,8 +40,8 @@ useEffect(()=>{
 <tr key={i}>
 <td>{m.user_name}</td>
 <td>{m.chatname}</td>
-<td>{m.message}</td>
 <td>{m.count}</td>
+<td>{m.message}</td>
 <td>({ moment(m.created_at).fromNow()})</td>
 </tr>
         
