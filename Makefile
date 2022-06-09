@@ -17,7 +17,7 @@ start:
 	@echo "Starting the project..."
 	@docker-compose up -d
 	@docker-compose logs -f
-	@curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
+
 
 stop:
 	@echo "Stopping the project..."

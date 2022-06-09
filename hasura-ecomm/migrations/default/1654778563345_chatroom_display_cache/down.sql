@@ -1,0 +1,1 @@
+DROP MATERIALIZED VIEW IF EXISTS "chatroom_display_cache";
