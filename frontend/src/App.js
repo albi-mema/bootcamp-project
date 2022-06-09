@@ -1,6 +1,8 @@
 import './App.css';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import moment from "moment";
+
 
 function App() {
 
@@ -40,7 +42,7 @@ useEffect(()=>{
 <td>{m.chatname}</td>
 <td>{m.message}</td>
 <td>{m.count}</td>
-<td>{m.created_at}</td>
+<td>({ moment(m.created_at).fromNow()})</td>
 </tr>
         
         )) }
