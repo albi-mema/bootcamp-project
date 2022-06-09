@@ -2,6 +2,8 @@
 # it is used in the
 seed?=seed
 
+seed1?=seed1
+
 # HASURA MIGRATION STEPS
 # it is used in the hasura postgres migration scripts to control
 # how many up/down migrations to applu
@@ -17,7 +19,7 @@ start:
 	@echo "Starting the project..."
 	@docker-compose up -d
 	@docker-compose logs -f
-
+	
 
 stop:
 	@echo "Stopping the project..."
@@ -50,6 +52,11 @@ init:
 seed:
 	@echo "Seeding the main database from: \"$(seed).sql\"..."
 	@hasura seed apply --project hasura-ecomm --database-name default --file $(seed).sql
+
+
+seed1:
+	@echo "Seeding the main database from: \"$(seed1).sql\"..."
+	@hasura seed apply --project hasura-ecomm --database-name default --file $(seed1).sql
 
 
 #
