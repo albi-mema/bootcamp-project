@@ -9,7 +9,7 @@ function App() {
   const [msg, setMsg]= useState([]);
 
 useEffect(()=>{
-  axios.get(`https://8080-albimema-bootcampprojec-0cc5dyxmrak.ws-eu47.gitpod.io/api/rest/public/table/message`)
+  axios.get("/api/rest/public/table/messages")
     .then((response)=>{
       console.log(response);
       setMsg(response.data.chatroom_display_cache);
