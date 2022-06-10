@@ -1,6 +1,6 @@
 
 tasks:
-  - before : npm i
+  - before : cd frontend/ && npm i && npm start frontend/
   - before : curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
   - init: make
 
